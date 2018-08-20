@@ -14,6 +14,8 @@
 <title>Insert title here</title>
 <script type="text/javascript"
 	src="<%=basePath%>static/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript"
+	src="<%=basePath%>static/js/image.js"></script>
 <script type="text/javascript">
 	$("#js-export").click(function(){
 		alert("2222");
@@ -24,5 +26,11 @@
 <body>
     <p>${message}</p>
     <!-- <button id="js-export" type="button" class="btn btn-primary">导出Excel</button> -->
+   	<input type="file"  id="upfile" style="display:none;">
+   	<input type="button" value="选择文件" onclick="$('input[id=upfile]').click()"/> 
+   	<input type="hidden" id="fileId" name="cover"/>
+   	<div class="coverPanelBox" id="qwerqwer" style="width:100px;height:100px;">
+		<img style="width:100px;height:100px;"/>	
+	</div> 
 </body>
 </html>
